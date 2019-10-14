@@ -76,5 +76,6 @@ sudo wget https://raw.githubusercontent.com/felipefacundes/desktop/master/etc-sy
 /etc/environment
 ```
 ### Você poderá habilitar o Radv, para à sua AMDGPU RADEON, para tanto siga esse meu tutorial, super fácil:
-
 https://amdgpu.github.io/
+### Use o GAMEMODE da Feral Interactive:
+https://github.com/FeralInteractive/gamemode
