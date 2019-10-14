@@ -10,7 +10,7 @@
 <br></br>
 
 ### Para deixar o seu computador muito mais rápido, eficiente, mais seguro. Aumente a performance e o FPS em JOGOS:
-###### Leia. Na linha abaixo, contém 11 linhas de comando, obedeça cada comando:
+###### Leia. Na linha abaixo, contém 12 linhas de comando, obedeça cada comando:
 ```
 echo -e "vm.swappiness=0" > /etc/sysctl.conf
 echo -e "net.ipv4.tcp_syncookies=1" >> /etc/sysctl.conf
@@ -27,7 +27,7 @@ echo -e "vm.oom_kill_allocating_task=1" > /etc/sysctl.conf
 ```
 
 ##### Em `/etc/security/limits.conf`  
-###### Leia. Na linha abaixo, contém 10 linhas de comando, obedeça cada comando:
+###### Leia. Na linha abaixo, contém 11 linhas de comando, obedeça cada comando:
 ```
 echo -e "hard stack unlimited" >> /etc/security/limits.conf
 echo -e "nproc unlimited" >> /etc/security/limits.conf
@@ -43,7 +43,7 @@ echo -e "* hard nofile 1048576" >> /etc/security/limits.conf
 ```
 ##### Inclua em `/etc/systemd/`
 ###### Observação, com às alterações abaixo seu computador,passará a desligar instantaneamente.
-###### Leia. Na linha abaixo, contém 3 linhas de comando, obedeça cada comando:
+###### Leia. Na linha abaixo, contém 5 linhas de comando, obedeça cada comando:
 ```
 cd /etc/systemd/
 sudo rm system.conf
