@@ -122,8 +122,7 @@ media="all">/*!
     <style id="savepage-cssvariables">
   :root {
   }
-</style>
-    <script id="savepage-shadowloader" type="application/javascript">
+</style> <script id="savepage-shadowloader" type="application/javascript">
   "use strict"
   window.addEventListener("DOMContentLoaded",
   function(event)
@@ -131,8 +130,7 @@ media="all">/*!
     savepage_ShadowLoader(5);
   },false);
   function savepage_ShadowLoader(c){createShadowDOMs(0,document.documentElement);function createShadowDOMs(a,b){var i;if(b.localName=="iframe"||b.localName=="frame"){if(a<c){try{if(b.contentDocument.documentElement!=null){createShadowDOMs(a+1,b.contentDocument.documentElement)}}catch(e){}}}else{if(b.children.length>=1&&b.children[0].localName=="template"&&b.children[0].hasAttribute("data-savepage-shadowroot")){b.attachShadow({mode:"open"}).appendChild(b.children[0].content);b.removeChild(b.children[0]);for(i=0;i<b.shadowRoot.children.length;i++)if(b.shadowRoot.children[i]!=null)createShadowDOMs(a,b.shadowRoot.children[i])}for(i=0;i<b.children.length;i++)if(b.children[i]!=null)createShadowDOMs(a,b.children[i])}}}
-</script>
-    <meta name="savepage-url" content="https://github.com/tuninglinux/tuninglinux/">
+</script> <meta name="savepage-url" content="https://github.com/tuninglinux/tuninglinux/">
     <meta name="savepage-title" content="tuninglinux/tuninglinux: Tudo sobre como tunar o seu Linux">
     <meta name="savepage-from" content="https://github.com/tuninglinux/tuninglinux/">
     <meta name="savepage-date" content="Mon Oct 14 2019 13:14:56 GMT-0300 (Horário Padrão de Brasília)">
@@ -241,18 +239,18 @@ media="all">/*!
                             d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Leia.
                       Na linha abaixo, contém 12 linhas de comando, obedeça cada
                       comando:</h6>
-                    <pre><code>echo -e "vm.swappiness=0" &gt; /etc/sysctl.conf
-echo -e "net.ipv4.tcp_syncookies=1" &gt;&gt; /etc/sysctl.conf
-echo -e "net.ipv4.ip_forward=1" &gt;&gt; /etc/sysctl.conf
-echo -e "net.ipv4.tcp_dsack=0" &gt; /etc/sysctl.conf
-echo -e "net.ipv4.tcp_sack=0" &gt; /etc/sysctl.conf
-echo -e "fs.file-max=100000" &gt; /etc/sysctl.conf
-echo -e "kernel.sched_migration_cost_ns=5000000" &gt; /etc/sysctl.conf
-echo -e "kernel.sched_autogroup_enabled=0" &gt; /etc/sysctl.conf
-echo -e "vm.dirty_background_bytes=16777216" &gt; /etc/sysctl.conf
-echo -e "vm.dirty_bytes=50331648" &gt; /etc/sysctl.conf
-echo -e "kernel.pid_max=4194304" &gt; /etc/sysctl.conf
-echo -e "vm.oom_kill_allocating_task=1" &gt; /etc/sysctl.conf
+                    <pre><code>sudo su -c "echo -e "vm.swappiness=0" &gt; /etc/sysctl.conf"
+sudo su -c "echo -e "net.ipv4.tcp_syncookies=1" &gt;&gt; /etc/sysctl.conf"
+sudo su -c "echo -e "net.ipv4.ip_forward=1" &gt;&gt; /etc/sysctl.conf"
+sudo su -c "echo -e "net.ipv4.tcp_dsack=0" &gt;&gt; /etc/sysctl.conf"
+sudo su -c "echo -e "net.ipv4.tcp_sack=0" &gt;&gt; /etc/sysctl.conf"
+sudo su -c "echo -e "fs.file-max=100000" &gt;&gt; /etc/sysctl.conf"
+sudo su -c "echo -e "kernel.sched_migration_cost_ns=5000000" &gt;&gt; /etc/sysctl.conf"
+sudo su -c "echo -e "kernel.sched_autogroup_enabled=0" &gt;&gt; /etc/sysctl.conf"
+sudo su -c "echo -e "vm.dirty_background_bytes=16777216" &gt;&gt; /etc/sysctl.conf"
+sudo su -c "echo -e "vm.dirty_bytes=50331648" &gt;&gt; /etc/sysctl.conf"
+sudo su -c "echo -e "kernel.pid_max=4194304" &gt;&gt; /etc/sysctl.conf"
+sudo su -c "echo -e "vm.oom_kill_allocating_task=1" &gt;&gt; /etc/sysctl.conf"
 </code></pre>
                     <h5><a id="user-content-em-etcsecuritylimitsconf" class="anchor"
                         aria-hidden="true" href="#em-etcsecuritylimitsconf"><svg
@@ -267,17 +265,17 @@ echo -e "vm.oom_kill_allocating_task=1" &gt; /etc/sysctl.conf
                             d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Leia.
                       Na linha abaixo, contém 11 linhas de comando, obedeça cada
                       comando:</h6>
-                    <pre><code>echo -e "hard stack unlimited" &gt;&gt; /etc/security/limits.conf
-echo -e "nproc unlimited" &gt;&gt; /etc/security/limits.conf
-echo -e "nofile 1048576" &gt;&gt; /etc/security/limits.conf
-echo -e "memlock unlimited" &gt;&gt; /etc/security/limits.conf
-echo -e "as unlimited" &gt;&gt; /etc/security/limits.conf
-echo -e "cpu unlimited" &gt;&gt; /etc/security/limits.conf
-echo -e "fsize unlimited" &gt;&gt; /etc/security/limits.conf
-echo -e "memlock unlimited" &gt;&gt; /etc/security/limits.conf
-echo -e "msgqueue unlimited" &gt;&gt; /etc/security/limits.conf
-echo -e "locks unlimited" &gt;&gt; /etc/security/limits.conf
-echo -e "* hard nofile 1048576" &gt;&gt; /etc/security/limits.conf
+                    <pre><code>sudo su -c "echo -e "hard stack unlimited" &gt;&gt; /etc/security/limits.conf"
+sudo su -c "echo -e "nproc unlimited" &gt;&gt; /etc/security/limits.conf"
+sudo su -c "echo -e "nofile 1048576" &gt;&gt; /etc/security/limits.conf"
+sudo su -c "echo -e "memlock unlimited" &gt;&gt; /etc/security/limits.conf"
+sudo su -c "echo -e "as unlimited" &gt;&gt; /etc/security/limits.conf"
+sudo su -c "echo -e "cpu unlimited" &gt;&gt; /etc/security/limits.conf"
+sudo su -c "echo -e "fsize unlimited" &gt;&gt; /etc/security/limits.conf"
+sudo su -c "echo -e "memlock unlimited" &gt;&gt; /etc/security/limits.conf"
+sudo su -c "echo -e "msgqueue unlimited" &gt;&gt; /etc/security/limits.conf"
+sudo su -c "echo -e "locks unlimited" &gt;&gt; /etc/security/limits.conf"
+sudo su -c "echo -e "* hard nofile 1048576" &gt;&gt; /etc/security/limits.conf"
 </code></pre>
                     <h5><a id="user-content-inclua-em-etcsystemd" class="anchor"
                         aria-hidden="true" href="#inclua-em-etcsystemd"><svg class="octicon octicon-link"
