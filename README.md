@@ -67,7 +67,8 @@ sudo wget https://raw.githubusercontent.com/felipefacundes/desktop/master/etc-sy
 </device>
 </driconf>
 ```
-##### Inclua `export vblank_mode=0` e `export __GL_SYNC_TO_VBLANK=0` nos seguintes arquivos:
+##### Inclua `export vblank_mode=0` 
+##### E inclua `export __GL_SYNC_TO_VBLANK=0` nos seguintes arquivos:
 ```
 ~/.profile
 ~/.zprofile
