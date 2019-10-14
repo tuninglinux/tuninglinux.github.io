@@ -15,15 +15,15 @@
 echo -e "vm.swappiness=0" > /etc/sysctl.conf
 echo -e "net.ipv4.tcp_syncookies=1" >> /etc/sysctl.conf
 echo -e "net.ipv4.ip_forward=1" >> /etc/sysctl.conf
-echo -e "net.ipv4.tcp_dsack=0" > /etc/sysctl.conf
-echo -e "net.ipv4.tcp_sack=0" > /etc/sysctl.conf
-echo -e "fs.file-max=100000" > /etc/sysctl.conf
-echo -e "kernel.sched_migration_cost_ns=5000000" > /etc/sysctl.conf
-echo -e "kernel.sched_autogroup_enabled=0" > /etc/sysctl.conf
-echo -e "vm.dirty_background_bytes=16777216" > /etc/sysctl.conf
-echo -e "vm.dirty_bytes=50331648" > /etc/sysctl.conf
-echo -e "kernel.pid_max=4194304" > /etc/sysctl.conf
-echo -e "vm.oom_kill_allocating_task=1" > /etc/sysctl.conf
+echo -e "net.ipv4.tcp_dsack=0" >> /etc/sysctl.conf
+echo -e "net.ipv4.tcp_sack=0" >> /etc/sysctl.conf
+echo -e "fs.file-max=100000" >> /etc/sysctl.conf
+echo -e "kernel.sched_migration_cost_ns=5000000" >> /etc/sysctl.conf
+echo -e "kernel.sched_autogroup_enabled=0" >> /etc/sysctl.conf
+echo -e "vm.dirty_background_bytes=16777216" >> /etc/sysctl.conf
+echo -e "vm.dirty_bytes=50331648" >> /etc/sysctl.conf
+echo -e "kernel.pid_max=4194304" >> /etc/sysctl.conf
+echo -e "vm.oom_kill_allocating_task=1" >> /etc/sysctl.conf
 ```
 
 ##### Em `/etc/security/limits.conf`  
